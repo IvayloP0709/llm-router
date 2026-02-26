@@ -1,0 +1,50 @@
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# MLflow and training artifacts
+mlruns/
+artifacts/
+models/
+*.pkl
+*.joblib
+
+# Project-generated data
+data/queries.csv
+data/queries_in_progress.csv
+
+# Agent logs
+*.md
