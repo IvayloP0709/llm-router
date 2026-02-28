@@ -43,8 +43,8 @@ models/
 *.joblib
 
 # Project-generated data
-data/queries.csv
-data/queries_in_progress.csv
+*.csv
+*.json
 
 # Agent logs
 *.md
