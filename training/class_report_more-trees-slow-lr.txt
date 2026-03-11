@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+gemini-flash       0.68      0.89      0.77        19
+      gpt-4o       0.90      0.90      0.90        21
+     o3-mini       0.50      0.20      0.29        10
+
+    accuracy                           0.76        50
+   macro avg       0.69      0.67      0.65        50
+weighted avg       0.74      0.76      0.73        50
