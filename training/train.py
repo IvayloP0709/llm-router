@@ -92,7 +92,7 @@ cost  = weighted_cost_score(y_test, y_pred)
 print(f"Weighted cost score: {cost} (the lower the better)\n")
 
 # feature importance chart 
-os.makedirs("traning", exist_ok=True)
+os.makedirs("training", exist_ok=True)
 
 importances = model.feature_importances_
 feature_names = X.columns
@@ -103,8 +103,8 @@ plt.barh(feature_names[sorted_idx], importances[sorted_idx])
 plt.xlabel("Importance")
 plt.title("XGBoost Feature Importance - LLM Router")
 plt.tight_layout()
-plt.savefig("traning/feature_importance.png", dpi=150)
-print("Saved traning/feature_importance.png")
+plt.savefig("training/feature_importance.png", dpi=150)
+print("Saved training/feature_importance.png")
 
 # save model and label encoder 
 os.makedirs("models", exist_ok=True)

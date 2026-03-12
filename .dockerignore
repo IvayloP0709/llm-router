@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+.git/
+.env
+mlruns/
+data/
+training/
+aws/
+*.pyc
+*.md
+.gitignore
+.vscode/
+.claude/

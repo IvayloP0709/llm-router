@@ -1,6 +1,6 @@
 import sys 
 import os 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from fastapi import FastAPI, HTTPException
 import joblib 
 import json 
@@ -14,7 +14,7 @@ from features.extractor import extract_features
 # pydantic schemas 
 
 class QueryRequest(BaseModel):
-    text:str
+    text: str = Field(..., min_length=1, max_length=10000)
 
     class Config:
         json_schema_extra = {

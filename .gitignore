@@ -40,11 +40,6 @@ mlruns/
 artifacts/
 models/
 *.pkl
-*.joblib
-
-# Project-generated data
-*.csv
-*.json
 
 # Agent logs
 *.md
